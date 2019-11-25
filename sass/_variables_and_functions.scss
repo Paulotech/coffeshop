@@ -10,7 +10,6 @@ $colors: (
     "Brown": $color-4
 );
 
-
 @each $name, $value in $colors {        
     .bgc-#{$name} {
         background-color: $value;
