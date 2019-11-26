@@ -1,0 +1,6 @@
+#home {
+    @include flex(flex, center, flex-end);
+    height: calc(50vh + 100px);
+    width: 100%;
+    background-color: $color-2;
+}

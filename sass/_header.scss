@@ -10,12 +10,27 @@ header {
         border-radius: 30px;
         box-shadow: 0px 0px 1px #000;
         padding: 15px;
+        background-color: $color-1;
         ul {
             @include flex(flex, space-around, center);
             margin: 0;
             li {
                 position: relative;
                 margin: 0 15px;
+                
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    &:hover {
+                        text-decoration: none;
+                        color: $color-4;
+                        text-shadow: 0px 0px 1px $color-4;
+                    }
+                }
+            }
+            li:nth-last-child(1n+2) {
                 &::after {
                     content: "";
                     position: absolute;
@@ -24,14 +39,6 @@ header {
                     height: 50px;
                     width: 1px;
                     background-color: $color-2;
-                }
-
-                a {
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: none;
-                        color: $color-4;
-                    }
                 }
             }
         }
