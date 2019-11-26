@@ -19,3 +19,9 @@ $colors: (
         color: $value;
     }
 }
+
+@mixin flex($d, $j, $a) {
+    display: $d;
+    justify-content: $j;
+    align-items: $a;
+}
