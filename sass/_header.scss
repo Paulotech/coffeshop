@@ -1,9 +1,10 @@
 header {
-    position: fixed;
-    @include flex(flex, center, center);
-    height: 80px;
+    position: absolute;
+    @include flex(flex, center, flex-end);
     width: 100%;
-    top: 20px;
+    // top: 0px;
+    z-index: 20;
+    padding: 40px 0 20px 0;
     .menu {
         position: relative;
         @include flex(flex, center, center);
