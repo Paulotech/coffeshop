@@ -1,22 +1,22 @@
 $color-1: #FFFFFF;
 $color-2: #e8e8e8;
-$color-3: #845f51;
+$color-3: #a0796b;
 $color-4: #664735;
 
 $colors: (
     "white": $color-1, 
     "gray": $color-2, 
     "brown-light": $color-3, 
-    "Brown": $color-4
+    "brown": $color-4,
 );
 
 @each $name, $value in $colors {        
     .bgc-#{$name} {
-        background-color: $value;
+        background-color: $value !important;
     }
     
     .color-#{$name} {
-        color: $value;
+        color: $value !important;
     }
 }
 
